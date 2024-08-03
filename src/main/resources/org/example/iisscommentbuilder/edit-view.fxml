@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.iisscommentbuilder.MainViewController">
+    <AnchorPane layoutY="6.0">
+        <ListView fx:id="goalListView" fixedCellSize="50.0" layoutX="3.0" layoutY="23.0" prefHeight="371.0" prefWidth="175.0" />
+        <Text layoutX="72.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goals" wrappingWidth="31.31298828125">
+        <font>
+            <Font name="System Bold" size="13.0" />
+        </font>
+        </Text>
+        <ListView fx:id="activityListView" layoutX="187.0" layoutY="22.0" prefHeight="341.0" prefWidth="200.0" />
+        <Label layoutX="268.0" text="Activities">
+        <font>
+            <Font name="System Bold" size="13.0" />
+        </font>
+        </Label>
+        <Label layoutX="471.0" text="Builder">
+        <font>
+            <Font name="System Bold" size="13.0" />
+        </font>
+        </Label>
+        <TextArea fx:id="commentTextArea" layoutX="395.0" layoutY="22.0" prefHeight="341.0" prefWidth="200.0" />
+        <Button fx:id="copyButton" layoutX="467.0" layoutY="365.0" mnemonicParsing="false" onAction="#onCopyClick" prefHeight="17.0" prefWidth="47.0" text="Copy" />
+        <Button fx:id="addButton" disable="true" layoutX="187.0" layoutY="367.0" mnemonicParsing="false" onAction="#onAddClick" text="Add" />
+    <Button fx:id="createButton" disable="true" layoutX="233.0" layoutY="367.0" mnemonicParsing="false" text="Create" />
+        <Button fx:id="editButton" disable="true" layoutX="293.0" layoutY="367.0" mnemonicParsing="false" text="Edit" />
+        <Button fx:id="deleteButton" disable="true" layoutX="342.0" layoutY="367.0" mnemonicParsing="false" text="Delete" />
+    </AnchorPane>
+    <ButtonBar layoutY="400.0" prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+          <Button disable="true" mnemonicParsing="false" text="Builder" textAlignment="CENTER" />
+          <Button fx:id="settingButton" mnemonicParsing="false" text="Settings" />
+          <Button fx:id="logsButton" mnemonicParsing="false" text="Logs" />
+         <Button fx:id="quitButton" mnemonicParsing="false" onAction="#onQuitClick" text="Quit" />
+      </buttons>
+    </ButtonBar>
+</AnchorPane>
