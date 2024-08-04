@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fbbd92a-2419-4065-adaf-25ef968b357c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/iisscommentbuilder/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/iisscommentbuilder/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/CreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/CreateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/EditorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/Goal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/Goal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/JDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/JDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/MainViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/StageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/iisscommentbuilder/StageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/iisscommentbuilder/create-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/iisscommentbuilder/create-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/iisscommentbuilder/edit-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/iisscommentbuilder/edit-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/iisscommentbuilder/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/iisscommentbuilder/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/iisscommentbuilder/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/iisscommentbuilder/main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +33,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2iqoQDmnXsILOhwMLMDvkVQ7ibS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -33,7 +46,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Application.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -61,5 +76,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Made changes to front end and cleaned up back end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made changes to front end and cleaned up back end" />
   </component>
 </project>

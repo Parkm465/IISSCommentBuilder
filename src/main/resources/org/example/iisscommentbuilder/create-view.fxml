@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
@@ -7,40 +8,114 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.iisscommentbuilder.CreateController">
-    <AnchorPane layoutY="6.0">
-        <ListView fx:id="goalListView" fixedCellSize="50.0" layoutX="3.0" layoutY="23.0" prefHeight="371.0" prefWidth="175.0" />
-        <Text layoutX="72.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goals" wrappingWidth="31.31298828125">
-        <font>
-            <Font name="System Bold" size="13.0" />
-        </font>
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.iisscommentbuilder.CreateController">
+    <GridPane hgap="20.0" layoutX="21.0" layoutY="25.0" prefHeight="768.0" prefWidth="1369.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="219.53965759277344" minHeight="0.0" prefHeight="25.092063903808594" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="636.8255004882812" minHeight="10.0" prefHeight="622.4079360961914" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="189.85400390625" minHeight="10.0" prefHeight="47.7396240234375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="183.3936767578125" minHeight="10.0" prefHeight="60.14599609375" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label text="Description" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label text="Activities" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Goals" wrappingWidth="50.141571044921875" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
         </Text>
-        <Label layoutX="268.0" text="Activities">
-        <font>
-            <Font name="System Bold" size="13.0" />
-        </font>
-        </Label>
-        <Label layoutX="464.0" layoutY="-2.0" text="Description">
-        <font>
-            <Font name="System Bold" size="13.0" />
-        </font>
-        </Label>
-        <TextArea fx:id="commentTextArea" layoutX="395.0" layoutY="22.0" prefHeight="341.0" prefWidth="200.0" />
-        <Button layoutX="459.0" layoutY="367.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="Submit" />
-      <TextField layoutX="181.0" layoutY="180.0" prefHeight="26.0" prefWidth="212.0" />
-      <Text layoutX="192.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Choose a Goal" textAlignment="CENTER" wrappingWidth="190.7158203125" />
-      <Text layoutX="192.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Write a Name" textAlignment="CENTER" wrappingWidth="190.7158203125" />
-      <Text layoutX="192.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Write your Description" textAlignment="CENTER" wrappingWidth="190.7158203125" />
-    </AnchorPane>
-    <ButtonBar layoutY="400.0" prefHeight="40.0" prefWidth="200.0">
-      <buttons>
-          <Button mnemonicParsing="false" text="Builder" textAlignment="CENTER" />
-          <Button fx:id="settingButton" mnemonicParsing="false" text="Settings" />
-          <Button fx:id="logsButton" mnemonicParsing="false" text="Logs" />
-         <Button fx:id="quitButton" mnemonicParsing="false" text="Quit" />
-      </buttons>
-    </ButtonBar>
+        <ListView fx:id="goalListView" fixedCellSize="50.0" prefHeight="371.0" prefWidth="175.0" GridPane.rowIndex="1" />
+        <TextArea fx:id="descriptionTextArea" prefHeight="341.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextArea>
+        <Button mnemonicParsing="false" onAction="#onSubmitButtonClicked" prefHeight="35.0" prefWidth="81.0" text="Submit" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <ButtonBar buttonMinWidth="100.0" prefHeight="40.0" prefWidth="153.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <buttons>
+                <Button mnemonicParsing="false" onAction="#onBuilderButtonClick" text="Builder" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button disable="true" mnemonicParsing="false" text="Create">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onEditButtonClicked" text="Edit">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onQuitClick" text="Quit">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </buttons>
+        </ButtonBar>
+        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="603.5703125" minHeight="10.0" prefHeight="571.8121337890625"
+                                vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="303.2080993652344" minHeight="10.0" prefHeight="62.1878662109375"
+                                vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <TextField fx:id="nameTextField" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0"
+                       prefWidth="440.0" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                       GridPane.valignment="BOTTOM">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </TextField>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" GridPane.halignment="CENTER"
+                  GridPane.valignment="CENTER">
+                <padding>
+                    <Insets top="20.0"/>
+                </padding>
+                <Label alignment="CENTER" prefHeight="23.0" prefWidth="442.0" text="1. Choose a Goal">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="23.0" prefWidth="442.0" text="2. Write the Activity Name">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="23.0" prefWidth="442.0" text="3. Write your Description">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+            </VBox>
+        </GridPane>
+    </GridPane>
 </AnchorPane>

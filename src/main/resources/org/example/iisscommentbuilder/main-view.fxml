@@ -1,14 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.iisscommentbuilder.MainViewController">
+    <GridPane hgap="20.0" layoutX="21.0" layoutY="25.0" prefHeight="768.0" prefWidth="1369.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="219.53965759277344" minHeight="0.0" prefHeight="25.092063903808594" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="636.8255004882812" minHeight="10.0" prefHeight="622.4079360961914" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="189.85400390625" minHeight="10.0" prefHeight="47.7396240234375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="183.3936767578125" minHeight="10.0" prefHeight="60.14599609375" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label text="Builder" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label text="Activities" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Goals" wrappingWidth="50.141571044921875" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <ListView fx:id="goalListView" fixedCellSize="50.0" prefHeight="371.0" prefWidth="175.0" GridPane.rowIndex="1" />
+        <ListView fx:id="activityListView" prefHeight="341.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextArea fx:id="commentTextArea" prefHeight="341.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+             <Font size="18.0" />
+         </font>
+        </TextArea>
+        <Button fx:id="addButton" disable="true" mnemonicParsing="false" onAction="#onAddClick" text="Add" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+             <Font size="18.0" />
+         </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#onCopyClick" prefHeight="35.0" prefWidth="72.0" text="Copy" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+             <Font size="18.0" />
+         </font>
+        </Button>
+        <ButtonBar buttonMinWidth="100.0" prefHeight="40.0" prefWidth="153.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+          <buttons>
+              <Button disable="true" mnemonicParsing="false" text="Builder" textAlignment="CENTER">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Button>
+              <Button fx:id="createButton" disable="true" mnemonicParsing="false" onAction="#onCreateClick" text="Create">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Button>
+              <Button fx:id="editButton" disable="true" mnemonicParsing="false" onAction="#onEditClick" text="Edit">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Button>
+              <Button mnemonicParsing="false" onAction="#onQuitClick" text="Quit">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Button>
+          </buttons>
+        </ButtonBar>
+    </GridPane>
 </AnchorPane>
