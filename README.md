@@ -10,15 +10,22 @@ One of the major challenges that I dealt with was debugging MySQL Workshop. I wa
 
 ## Timeline
 ### Outlining
+I outlined the technologies learn to improve my Java Programming skills.
 <img width="956" alt="Screenshot 2024-11-06 at 10 11 06 AM" src="https://github.com/user-attachments/assets/df96e6cd-052e-4726-9a7b-76ff770b8f7f">
 
 ### Drafting
+I drew how I wanted my application to look. 
 <img width="709" alt="Screenshot 2024-11-06 at 10 11 24 AM" src="https://github.com/user-attachments/assets/0160ce8a-241c-40ea-9a20-ab99a0852f8f">
 
 ### Learning
+In order to create this application, I learned JavaFx & MySQL. I also learned a new IDE (Intellij IDEA) & Scene Builder.
+
 <img width="715" alt="Screenshot 2024-11-06 at 10 11 50 AM" src="https://github.com/user-attachments/assets/c31176ca-3bb2-44c7-8c13-fc9c233f8fcd">
 
 ### Implementing
+Here I wrote down how I wanted the application to function. 
+Basically, how the application would connect to MySQL, how to store some of the data, & the actions that would affect the program.
+
 <img width="727" alt="Screenshot 2024-11-06 at 10 12 03 AM" src="https://github.com/user-attachments/assets/a2d9cb14-e41d-4061-bb7d-3c16d719dd59">
 
 ### Final Results
@@ -30,6 +37,7 @@ One of the major challenges that I dealt with was debugging MySQL Workshop. I wa
 - Where users can store new activities & progress for later compiling.
 
 <img width="1400" alt ="Screenshot 2024-11-06 at 10 21 52 AM" src="https://github.com/user-attachments/assets/06015717-d0e2-4234-91ff-dabad926d33c">
+
 **Editing Screen:**
 - Where users can edit & delete their stored activities & progress.
 
